@@ -28,6 +28,7 @@ const UserPets = () => {
         setIsLoading(false);
       } else {
         setPets(response.data);
+        setError("");
         setIsLoading(false);
       }
     });

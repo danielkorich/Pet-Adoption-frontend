@@ -34,6 +34,7 @@ const ProfileTelephone = () => {
         setIsLoading(false);
       } else {
         setIsLoading(false);
+        setError("")
         alert("Telephone saved successfully! ");
       }
     });

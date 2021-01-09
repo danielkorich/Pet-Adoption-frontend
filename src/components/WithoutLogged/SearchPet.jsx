@@ -29,6 +29,7 @@ const SearchPet = () => {
         setIsLoading(false);
       } else {
         setPets(response.data);
+        setError("");
         setIsLoading(false);
       }
     });

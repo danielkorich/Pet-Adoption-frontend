@@ -33,12 +33,11 @@ const ProfileEmail = () => {
         setIsLoading(false);
         return;
       } else if (response && response.status >= 400) {
-        setError(
-          `${response.data ? response.data : "Try Again Later!"}`
-        );
+        setError(`${response.data ? response.data : "Try Again Later!"}`);
         setIsLoading(false);
       } else {
         setIsLoading(false);
+        setError("");
         alert("Email saved successfully! ");
       }
     });

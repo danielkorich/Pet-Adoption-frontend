@@ -35,6 +35,7 @@ const UserDetails = (props) => {
       } else {
         setUser(response.data.user);
         setPets(response.data.pets);
+        setError("");
         setIsLoading(false);
       }
     });

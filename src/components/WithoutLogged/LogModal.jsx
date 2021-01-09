@@ -1,4 +1,5 @@
-import { Button, Card, Grid, Modal } from "@material-ui/core";
+import { Button, Card, Grid, IconButton, Modal } from "@material-ui/core";
+import CloseIcon from "@material-ui/icons/Close";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 
@@ -31,27 +32,43 @@ function LogModal(props) {
     >
       <Card>
         <Card style={{ backgroundColor: "#3F51B5" }}>
-          <Grid container>
-            <Button
-              color="secondary"
-              variant="contained"
-              onClick={() => {
-                props.modalIsSignIn();
-              }}
-              disabled={props.isModalSignIn}
-            >
-              Sign In
-            </Button>
-            <Button
-              color="secondary"
-              variant="contained"
-              onClick={() => {
-                props.modalIsSignUp();
-              }}
-              disabled={props.isModalSignUp}
-            >
-              Sign Up
-            </Button>
+          <Grid
+            container
+            direction="row"
+            justify="space-between"
+            alignItems="center"
+          >
+            <Grid item>
+              <Button
+                color="secondary"
+                variant="contained"
+                onClick={() => {
+                  props.modalIsSignIn();
+                }}
+                disabled={props.isModalSignIn}
+              >
+                Sign In
+              </Button>
+              <Button
+                color="secondary"
+                variant="contained"
+                onClick={() => {
+                  props.modalIsSignUp();
+                }}
+                disabled={props.isModalSignUp}
+              >
+                Sign Up
+              </Button>
+            </Grid>
+            <Grid item>
+              <IconButton
+                onClick={() => {
+                  props.handleClose();
+                }}
+              >
+                <CloseIcon />
+              </IconButton>
+            </Grid>
           </Grid>
         </Card>
         {content}

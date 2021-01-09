@@ -27,6 +27,7 @@ const UserLikedPets = () => {
         setIsLoading(false);
       } else {
         setPets(response.data);
+        setError("");
         setIsLoading(false);
       }
     });

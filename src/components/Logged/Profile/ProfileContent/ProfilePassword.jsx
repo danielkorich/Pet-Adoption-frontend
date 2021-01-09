@@ -41,6 +41,7 @@ const ProfilePassword = () => {
       } else {
         setPassword("");
         setPasswordVer("");
+        setError("")
         alert("Password saved successfully! ");
         setIsLoading(false);
       }

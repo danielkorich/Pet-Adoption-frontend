@@ -67,6 +67,7 @@ const NewPetForm = (props) => {
         setHypoallergenic(response.data.hypoallergenic);
         setDietaryRest(response.data.dietaryRest);
         setId(response.data._id);
+        setError({});
         setIsLoading(false);
       }
     });
@@ -147,7 +148,7 @@ const NewPetForm = (props) => {
     setWeight(value);
     setError({});
   };
-  
+
   const onHeightChange = (e, value) => {
     setHeight(value);
     setError({});

@@ -48,6 +48,7 @@ const ProfileName = () => {
         setIsLoading(false);
       } else {
         setIsLoading(false);
+        setError({});
         alert("Name saved successfully! ");
       }
     });

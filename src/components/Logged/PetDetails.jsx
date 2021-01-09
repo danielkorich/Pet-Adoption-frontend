@@ -57,6 +57,7 @@ const PetDetails = (props) => {
         setIsLoading(false);
       } else {
         setPet(response.data);
+        setError("");
         setIsLoading(false);
       }
     });
@@ -76,6 +77,7 @@ const PetDetails = (props) => {
         setIsLoading(false);
       } else {
         setLikedPets(response.data);
+        setError("");
         setIsLoading(false);
       }
     });
@@ -94,6 +96,7 @@ const PetDetails = (props) => {
         setIsLoading(false);
       } else {
         setLikedPets(response.data);
+        setError("");
         setIsLoading(false);
       }
     });
@@ -112,6 +115,7 @@ const PetDetails = (props) => {
         setIsLoading(false);
       } else {
         setLikedPets(response.data);
+        setError("");
         setIsLoading(false);
       }
     });
@@ -134,6 +138,7 @@ const PetDetails = (props) => {
           setIsLoading(false);
         } else {
           setPet(response.data);
+          setError("");
           setIsLoading(false);
         }
       });
@@ -159,6 +164,7 @@ const PetDetails = (props) => {
           setIsLoading(false);
         } else {
           setPet(response.data);
+          setError("");
           setIsLoading(false);
         }
       });
@@ -184,6 +190,7 @@ const PetDetails = (props) => {
           setIsLoading(false);
         } else {
           setPet(response.data);
+          setError("");
           setIsLoading(false);
         }
       });
